@@ -60,7 +60,9 @@ simpleBot.on("chatstarted", function(chat){
         simpleBot.broadcast(e.message.chat.first_name + " " + e.message.chat.last_name + " stopped");
     });
 
-    chat.on("command:broadcast", function(e) { simpleBot.broadcast(e.text); });
+    chat.on("command:broadcast", function(e) {
+        simpleBot.broadcast(chat.user.first_name + " says: " + e.text);
+    });
     
     chat.on("command:help", sendHelp);
 
