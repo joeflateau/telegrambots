@@ -1,0 +1,5 @@
+{
+    "botToken": "123123123:ABCABCABCABCABCABCABCABCABCABCABCAB",
+    "connectionString": "postgres://user:passwords@localhost/telegrambots",
+    "statDetailsLink":"https://my.statsvisualizer.com"
+}
